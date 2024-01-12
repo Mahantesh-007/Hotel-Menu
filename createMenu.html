@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="CSS/styles.css" />
+<link rel="stylesheet" href="CSS/createMenu.css" />
+
+<div class="container">
+  <div class="card">
+    <div class="card-image">
+      <h2 class="card-heading">
+        Add Food Items
+        <small>Let us create your account</small>
+      </h2>
+    </div>
+    <form class="card-form" id ="myForm" onsubmit=handleSubmit(event)>
+      <div class="input">
+        <input
+          type="text"
+          class="input-field"
+          id="dish-name"
+          value=""
+          name="dishName"
+          required
+        />
+        <label class="input-label">Dish Name</label>
+      </div>
+      <div class="input">
+        <input
+          type="text"
+          id="dish-price"
+          class="input-field"
+          value=""
+          name="price"
+          required
+        />
+        <label class="input-label">Price</label>
+      </div>
+
+      <div class="action">
+        <button class="action-button" type="submit" >Submit</button>
+      </div>
+    </form>
+    <div class="card-info">
+     
+    </div>
+  </div>
+</div>
+
+<script src="JS/createMenu.js"></script>
